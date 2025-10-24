@@ -66,4 +66,19 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('theme', 'light');
         }
     });
+
+    // ---------------------------------------------
+    // 4. "Lássuk a recepteket!" gomb görgető funkció (ÚJ FUNKCIÓ)
+    // ---------------------------------------------
+    const recipesButton = document.querySelector('.main-button');
+    const recipesSection = document.getElementById('receptek');
+
+    recipesButton.addEventListener('click', function() {
+        if (recipesSection) {
+            window.scrollTo({
+                top: recipesSection.offsetTop,
+                behavior: 'smooth' // Finom görgetés
+            });
+        }
+    });
 });
