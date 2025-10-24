@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 5. Részletes Recept Modal Funkció (ÚJ NAGY FRISSÍTÉS)
     // ---------------------------------------------
 
-    // Adatszerkezet a recepteknek (EZT BŐVÍTHETI A TÖBBI RECEPT ADATÁVAL)
+    // Adatszerkezet a mind a négy recepthez
     const recipesData = {
         'Spagetti Bolognai': {
             ingredients: [
@@ -96,13 +96,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 '2 gerezd fokhagyma', 
                 '400g hámozott paradicsom (konzerv)',
                 '1 dl vörösbor (opcionális)',
-                'Oregánó, só, bors'
+                'Oregánó, só, bors, olívaolaj'
             ],
             instructions: [
                 'Aprítsa fel a hagymát és a fokhagymát. Kevés olajon pirítsa üvegesre a hagymát.',
                 'Adja hozzá a darált húst, és pirítsa barnára.',
                 'Öntse hozzá a vörösbort (ha használ), és forralja fel. Adja hozzá a paradicsomot, a fokhagymát és a fűszereket.',
-                'Főzze alacsony hőfokon minimum 30 percig, de minél tovább, annál jobb.',
+                'Főzze alacsony hőfokon minimum 30 percig, de minél tovább, annál jobb (akár 1,5 óra).',
                 'Közben főzze meg a spagettit al dente-re. Tálalja parmezánnal.'
             ]
         },
@@ -112,7 +112,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 '200g Guanciale (vagy pancetta)', 
                 '4 db tojássárgája', 
                 '100g Pecorino Romano sajt', 
-                'Frissen őrölt fekete bors'
+                'Frissen őrölt fekete bors',
+                'Só'
             ],
             instructions: [
                 'A guanciale-t vágja kockákra, és pirítsa ropogósra zsírjában. Vegye le a tűzről, de hagyjon kevés zsírt a serpenyőben.',
@@ -180,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 modalTitle.textContent = recipeName;
 
                 // Hozzávalók feltöltése
-                modalIngredients.innerHTML = ''; // Előző tartalom törlése
+                modalIngredients.innerHTML = ''; 
                 recipe.ingredients.forEach(item => {
                     const li = document.createElement('li');
                     li.textContent = item;
@@ -188,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
                 
                 // Elkészítési lépések feltöltése
-                modalInstructions.innerHTML = ''; // Előző tartalom törlése
+                modalInstructions.innerHTML = ''; 
                 recipe.instructions.forEach(step => {
                     const li = document.createElement('li');
                     li.textContent = step;
