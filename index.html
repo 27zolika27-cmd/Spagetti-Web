@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Spagetti Világa - Receptek és Történet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>A TÉSZTÁK KIRÁLYNŐJE</h1>
+        <span class="theme-toggle" id="theme-toggle" title="Sötét/Világos téma váltása">☀️</span>
+        <nav>
+            <button class="hamburger" id="hamburger-btn">☰</button>
+            <ul class="nav-links" id="nav-ul">
+                <li><a href="#fokusz">Bevezető</a></li>
+                <li><a href="#receptek">Receptek</a></li>
+                <li><a href="#galeria">Galéria</a></li>
+                <li><a href="#tortenet">Történet</a></li>
+                <li><a href="#kapcsolat">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="fokusz">
+            <h2>Mi az igazi Spagetti?</h2>
+            <p>A spagetti (olaszul *spaghetti*, jelentése: 'apró madzagok') a leghíresebb olasz tésztafajta, amely Olaszország nemzeti konyhájának alapköve. Tökéletes választás gyors, laktató és ízletes ételekhez, legyen szó gazdag Bolognai szószról vagy egyszerű Aglio e Olio-ról.</p>
+            
+            <p class="recipe-highlight">A tökéletes al dente állag eléréséhez általában 8-10 perc főzési idő szükséges!</p>
+            
+            <button class="main-button">Lássuk a legjobb recepteket!</button>
+        </section>
+
+        <section id="receptek">
+            <h2>Klasszikus Receptek</h2>
+            <div class="profile-info-grid">
+                <div class="info-box">
+                    <strong>1. Spagetti Bolognai</strong>
+                    <span>A legnépszerűbb raguval készült változat, amely tökéletesen tapad a vékony szálakra.</span>
+                </div>
+                <div class="info-box">
+                    <strong>2. Spagetti Carbonara</strong>
+                    <span>Egyszerű római klasszikus guanciale-val, tojássárgájával és pecorino sajttal.</span>
+                </div>
+                <div class="info-box">
+                    <strong>3. Spagetti Aglio e Olio</strong>
+                    <span>Fokhagyma, olívaolaj és chili – gyors, elegáns és ízletes.</span>
+                </div>
+                <div class="info-box">
+                    <strong>4. Friss Pesto Spagetti</strong>
+                    <span>Nyári kedvenc friss bazsalikomos Pesto szósszal.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Spagetti Galéria</h2>
+            <p>Inspiráció a konyhába – a tökéletes al dente tésztától a gazdag szószokig.</p>
+            <div class="gallery-container">
+                <img src="images/image1.jpg" alt="Spagetti Bolognai szószban" class="gallery-img">
+                
+                <img src="images/image2.jpg" alt="Spagetti Carbonara szószban" class="gallery-img">
+                
+                <img src="images/image3.jpg" alt="Spagetti Aglio e Olio" class="gallery-img"> 
+            </div>
+        </section>
+
+        <section id="tortenet">
+            <h2>Honnan ered a Spagetti?</h2>
+            <p>Bár sokan Marco Polo-hoz kötik, a tésztafélék története sokkal régebbi. A spagetti déli olasz gyökerű, Nápoly környékén vált népszerűvé, ahol a gépesített gyártás lehetővé tette a hosszú tésztaszálak tömegtermelését.</p>
+        </section>
+        
+        <section id="kapcsolat">
+            <h2>Kapcsolatfelvétel és Hírlevél</h2>
+            <p>Van egy receptötleted vagy kérdésed? Írj nekünk! Feliratkozhatsz a heti spagetti hírlevelünkre is!</p>
+            
+            <form id="contact-form" action="https://formspree.io/f/xyzwabcd" method="POST"> 
+                
+                <div class="form-group">
+                    <label for="name">Név:</label>
+                    <input type="text" id="name" name="Név" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail cím:</label>
+                    <input type="email" id="email" name="E-mail" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Üzenet (vagy feliratkozás):</label>
+                    <textarea id="message" name="Üzenet" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="main-button">Küldés / Feliratkozás</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank" title="Facebook oldalunk"><i class="fab fa-facebook-f"></i></a>
+            
+            <a href="https://www.instagram.com/spag.etti.sp/" target="_blank" title="Instagram oldalunk"><i class="fab fa-instagram"></i></a> 
+            
+            <a href="#" target="_blank" title="Pinterest oldalunk"><i class="fab fa-pinterest"></i></a>
+            <a href="#" target="_blank" title="E-mail küldése"><i class="fas fa-envelope"></i></a> 
+        </div>
+        <p>&copy; 2025 A Spagetti Világa. Minden jog fenntartva. Buon Appetito!</p>
+    </footer>
+
+    <button id="scroll-to-top" title="Vissza a lap tetejére">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
